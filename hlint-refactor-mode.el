@@ -65,8 +65,8 @@ ARGS specifies additional arguments that are passed to hlint."
   "Automatically apply hlint suggestions"
   :lighter " hlint-refactor"
   :keymap (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "C-c a") 'hlint-refactor)
-            (define-key map (kbd "C-c o") 'hlint-refactor-at-point)
+            (define-key map (kbd "C-c , b") 'hlint-refactor)
+            (define-key map (kbd "C-c , r") 'hlint-refactor-at-point)
             map))
 
 (provide 'hlint-refactor-mode)
