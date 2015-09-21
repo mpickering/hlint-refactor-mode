@@ -34,9 +34,11 @@ exit code."
 (defun call-process-region-preserve-point (start end program &optional args)
   "Send text from START to END to PROGRAM with ARGS preserving the point.
 This uses `call-process-region-checked' internally."
-  (let ((oldpoint (point)))
+  (let ((line (line-number-at-pos))
+        (column (current-column)))
     (call-process-region-checked start end program args)
-    (goto-char oldpoint)))
+    (goto-line line)
+    (move-to-column column)))
 
 ;;;###autoload
 (defun hlint-refactor (&optional args)
