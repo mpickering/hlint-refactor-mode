@@ -4,6 +4,7 @@
 
 ;; Author Matthew Pickering
 ;; Keywords: haskell, refactor
+;; Version: 0.0.1
 ;; URL: https://github.com/mpickering/hlint-refactor-mode
 
 ;;; Commentary:
