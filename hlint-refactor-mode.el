@@ -1,4 +1,4 @@
-;; hlint-refactor-mode.el -- Apply HLint suggestions
+;; hlint-refactor-mode.el --- Apply HLint suggestions
 
 ;; Copyright (C) 2015 Matthew Pickering
 
