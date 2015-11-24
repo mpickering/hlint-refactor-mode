@@ -1,4 +1,6 @@
-Emacs bindings for hlint's `
+Emacs bindings for [hlint](https://github.com/ndmitchell/hlint)'s
+refactor option. This requires the refact executable from
+[apply-refact](https://github.com/mpickering/apply-refact).
 
 The default keybindings are
 
