@@ -58,7 +58,7 @@ ARGS specifies additional arguments that are passed to hlint."
 (defun hlint-refactor-at-point ()
   "Apply the hlint suggestion at point."
   (interactive)
-  (let ((col (number-to-string (current-column)))
+  (let ((col (number-to-string (+ 1 (current-column))))
         (line (number-to-string (line-number-at-pos))))
     (hlint-refactor
      (list (concat "--refactor-options=--pos " line "," col)))))
